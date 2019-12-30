@@ -1,0 +1,648 @@
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+
+/*
+@media only screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden !important;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+    }
+}
+*/
+
+body {
+    font-family: 'Baskervville', serif;
+    font-size: 1.2rem;
+}
+
+/*Custom Navbar -- Ismail*/
+.container-fluid {
+    position: relative;
+}
+
+
+.myNavbar {
+    background-color: #002966 !important;
+    opacity: .8;
+    padding: .5%;
+    display: flex;
+    font-size: 1.4rem;
+    width: 100vw;
+    position: fixed;
+    height: 115px;
+}
+
+.afterNav {
+    margin-top: 115px;
+}
+
+.logo {
+    padding-bottom: 3%;
+}
+
+.myNavbar a {
+    margin-left: 3%;
+}
+
+.navBarItems {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+}
+
+.navBarItems .navbarLinks {
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+.navbarLinks a:hover {
+    border-bottom: 2px solid #66ccff;
+    margin-bottom: 0;
+
+}
+
+.navBarItems {
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+
+.navBarItems .navbarLinks {
+    padding: 5px;
+}
+
+.navBarItems .navbarLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Dropdown content hidden due to display none */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002966;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-container {
+    display: inline;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    color: #66ccff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+/*Medium Screen will collapse*/
+@media only screen and (max-width: 768px) {
+
+    .myNavbar,
+    .navBarItems .navbarLinks {
+        display: block;
+    }
+
+    .dropdown-container {
+        top: 115px;
+    }
+
+    .empty1 {
+        display: none;
+    }
+
+    .navBarItems {
+        margin-top: 0;
+        padding-top: 0;
+        top: 115px;
+    }
+
+    .navBarItems {
+        display: none;
+    }
+
+    .customCollapse {
+        display: block;
+        margin-left: auto;
+        margin-right: 3%;
+
+    }
+
+    .customCollapse + label {
+        /*        background: url('Assets/iconfinder_menu_1540174.png') no-repeat;*/
+        margin-left: auto;
+        margin-right: 5%;
+        margin-top: 3%;
+        height: 64px;
+        width: 64px;
+        padding: 0 0 0 0px;
+    }
+
+
+    .customCollapse:checked ~ .navBarItems {
+        display: block;
+        text-align: center;
+        width: 100%;
+        background: #002966;
+        position: absolute;
+
+    }
+
+    .customCollapse:not(:checked) ~ .navBarItems {
+        display: none;
+    }
+
+    label {
+        text-align: center;
+        float: right;
+        padding: 0;
+    }
+
+    /*
+    label:hover {
+        border-left: 2px solid #66ccff;
+        border-right: 2px solid #66ccff;
+        border-bottom: 2px solid #66ccff;
+        border-top: 2px solid #66ccff;
+    }
+*/
+
+    .nav-icon {
+        margin: 1em;
+        width: 45px;
+    }
+
+    .nav-icon:after,
+    .nav-icon:before,
+    .nav-icon div {
+        background-color: #fff;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 5px;
+        margin: 7px 0;
+        transition: all .2s ease-in-out;
+    }
+
+    .nav-icon:hover:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+
+    .nav-icon:hover:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+
+    .nav-icon:hover div {
+        transform: scale(0);
+    }
+
+}
+
+/*BootStrap Version of Nav -- not using*/
+.bg-light {
+    background-color: #002966 !important;
+    opacity: .8;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d1e0e0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand img {
+    margin-left: 30%;
+}
+
+.navbar-nav {
+    margin-right: 2.5%;
+}
+
+
+.dropdown-content .col-md-6 {
+    border-right: solid 2px #66ccff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dropdown-content .col-md-6 {
+    border-right: solid 2px #66ccff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown-content .col-md-6:hover {
+    color: #66ccff;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .dropdown-content .col-sm-12 {
+        padding-bottom: 2%;
+    }
+}
+
+.dropdown-content .col-sm-12:hover {
+    color: #66ccff;
+}
+
+
+/* Nav bar links*/
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: .5rem;
+    padding-right: .5rem;
+    padding-left: 0;
+}
+
+ul ul {
+    list-style: none;
+
+}
+
+.customDropDown:hover .dropdown-content {
+    display: block;
+
+}
+
+.nav-link:hover {
+    padding-bottom: 0;
+    padding-left: 0;
+    border-bottom: 2px solid #66ccff;
+    width: 25%;
+
+}
+
+/* Jombotron Styles*/
+.trust-h1 {
+    color: #66ccff;
+    margin-bottom: 2%;
+}
+
+.trust {
+    text-align: center;
+}
+
+.trust-lead {
+    font-size: 1.0rem;
+    color: #334d4d;
+}
+
+.jumbotron {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+/*Brand Devleopment.html*/
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.textOnImage {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    /*
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+*/
+    font-size: 2.6rem;
+    font-weight: bold;
+    border-left: solid 2px #66ccff;
+    border-right: solid 2px #66ccff;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.textOnImage p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.brandDevTitle1 {
+    text-align: center;
+    width: 66%;
+    margin: auto;
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+
+.brandDevText1 {
+    font-size: 1.1rem;
+    color: #334d4d;
+    width: 65%;
+    margin: auto;
+    border-bottom: solid 2px #66ccff;
+    padding-bottom: 3%;
+}
+
+.brandDevText2 {
+    font-size: 1.1rem;
+    color: #334d4d;
+    width: 65%;
+    margin: auto;
+}
+
+.jumbotron2 span {
+    font-weight: bold;
+}
+
+
+.jumbotron2 ul {
+    font-size: 1.1rem;
+    color: #334d4d;
+    width: 65%;
+    margin: auto;
+    padding-bottom: 3%;
+    text-align: center;
+
+    list-style: circle
+}
+
+.customJ ul{
+    border-bottom: solid 2px #66ccff;
+}
+
+.jumbotron1 {
+    background: #EEEDED;
+}
+
+.jumbotron2 {}
+
+.brandDevTitle2 {
+    text-align: center;
+    padding-top: 14%;
+    margin: auto;
+    font-size: 2rem;
+
+}
+
+@media only screen and (max-width:768px) {
+    .two-col-row {
+        width: 65%;
+        border-bottom: solid 2px #66ccff;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .two-col-row {
+        width: 65%;
+        border-bottom: solid 2px #66ccff;
+        margin: auto;
+    }
+}
+
+.two-col-row {
+    border-bottom: solid 2px #66ccff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .brandDevTitle2 {
+        padding-bottom: 4%;
+    }
+}
+
+.brandDevList li {
+    list-style: circle;
+    font-size: 1.3rem;
+    color: #334d4d;
+    padding-bottom: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+    .brandDevList li {
+        text-align: center;
+    }
+}
+
+
+/*Home Screen Carousel*/
+.carousel-item img {
+    max-height: 600px;
+    min-height: 170px;
+}
+
+#HomeScreenImage1 a {
+    position: absolute;
+    bottom: 50%;
+    left: 40%;
+    font-size: 2.4rem;
+    font-weight: bold;
+    border-left: solid 2px #66ccff;
+
+    padding-left: 1%;
+    color: white;
+
+}
+
+#HomeScreenImage1 a:hover {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+#image1 {
+    filter: brightness(50%);
+}
+
+#HomeScreenImage2 a {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    border-left: solid 2px #66ccff;
+
+    padding-left: 1%;
+    color: white;
+
+}
+
+#HomeScreenImage2 a:hover {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+#HomeScreenImage3 a {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    border-left: solid 2px #66ccff;
+
+    padding-left: 1%;
+    color: white;
+
+}
+
+#HomeScreenImage3 a:hover {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #HomeScreenImage2 a,
+    #HomeScreenImage1 a,
+    #HomeScreenImage3 a {
+        font-size: 2.0rem;
+    }
+}
+
+
+/* Footer Styles Go here  -- For all .html pages*/
+/* Footer icons
+*/
+.footer-container {
+    color: white;
+    background: #002966;
+    padding-bottom: 5%;
+}
+
+#footer-heading {
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+
+}
+
+#footer-heading span {
+    display: inline;
+    position: relative;
+}
+
+#footer-heading span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+#footer-heading span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+#footer-heading span::before,
+#footer-heading span::after {
+    content: "";
+    height: 50%;
+    border-bottom: 1px solid #66ccff;
+    width: 90%;
+    position: absolute;
+}
+
+
+.headers {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.headers h3 {
+    color: #66ccff;
+}
+
+.headers i {
+    font-size: 2rem;
+}
+
+.contact i,
+.contact p {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.media {
+    display: block;
+    text-align: center;
+}
+
+.headers p {
+    padding-top: 1.5%;
+}
+
+.headers p a {
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.headers p a:hover {
+    color: #66ccff;
+}
+
+
+/*Contact Us Form*/
+.ContactForm {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ContactForm label {
+    float: left;
+}
+
+.ContactForm h1 {
+    text-align: center;
+    color: #334d4d;
+}
+
+.formContainer {
+    background: #EEEDED;
+    width: 100%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+#myButton{
+    text-align: center;
+}
+
+/*Terms page*/
+.Terms {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
