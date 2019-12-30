@@ -10,6 +10,6 @@
 
 Node Js Server:\
 Handles incoming post request from the "Contact Us" form.\
-..Captures the incoming body and sends the data to info@dimaondcoreconsulting.com\
+Captures the incoming body and sends the data to info@dimaondcoreconsulting.com \
 
 
